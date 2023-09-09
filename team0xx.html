@@ -1,0 +1,73 @@
+<!-- team0xx.html, change the xx to the team number -->
+<html>
+    <link href="team0xx.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <h1>標題</h1>
+    <body>
+        <ul id = "note_list">
+            <li>
+                <button id = "note_list_1" onclick= "nodeList1('note_list_1')">筆記清單</button>
+            </li>
+            <li>
+                <button id = "note_list_2" onclick= "nodeList2('note_list_2')">新增分類</button>
+            </li>
+            <li>
+                <button id = "note_list_3" onclick= "nodeList3('note_list_3')">新增筆記</button>
+            </li>
+            <li>
+                <button id = "note_list_4" onclick= "nodeList4('note_list_4')">查詢筆記</button>
+            </li>
+        </ul>
+        <table id = "tab" class="table-bordered">
+            <tr>
+                <td>title</td>
+                <td>content</td>
+                <td>event</td>
+                <td>event1</td>
+                <td>event2</td>
+            </tr>
+        </table>
+        <div id = "new_sort">
+            <p>新增分類</p>
+            <input id = "sort_input" placeholder="新增分類"/>
+            <button id = "submit_sort" onclick="addNewSort()">確認</button>
+        </div>
+        <div id = "new_note">
+            <p>新增筆記</p>
+            tag
+            <select id = "sort_select"></select>
+            <br/>
+            標題
+            <input id = "note_title" placeholder="標題"/>
+            <br/>
+            內容
+            <textarea id = "note_content" placeholder="內容"></textarea>
+            <button id = "submit_note" onclick="addNewNote()">確認</button>
+        </div>
+        <div id = "show_note">
+            <p>查詢筆記</p>
+            標題
+            <input id = "query_content"/>
+            <button id = "submit_query" onclick="queryNote()">確認</button>
+            <table id = "query_result">
+            </table>
+        </div>
+        <div id = "update_note">
+            <p>更新筆記</p>
+            tag
+            <select id = "update_sort_select"></select>
+            <br/>
+            標題
+            <input id = "update_note_title"/>
+            <br/>
+            內容
+            <textarea id = "update_note_content"></textarea>
+            <button id = "update_submit_note" onclick="updateNote()">確認</button>
+        </div>
+    </body>
+    <script src="team0xx.js"></script>
+</html>

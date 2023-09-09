@@ -1,0 +1,21 @@
+/* team0xx.css, change the xx to the team number */
+
+table {
+    position: relative;
+    border: 1px solid;
+    left : 50%;
+}
+
+td {
+    border: 5px solid;
+}
+
+#note_list {
+    position: absolute;
+}
+
+#show_note, #update_note, #new_note, #new_sort {
+    position: relative;
+    left : 50%;
+    display: none;
+}
