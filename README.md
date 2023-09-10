@@ -15,11 +15,12 @@ online netbook system with javascript
     -  格式 :  `[[index, title, content]]`
 
 ## function
+
 - note 資料加入 button
   - `addBtInData(note_total, [["閱覽", "insertEvent"], ["修改", "updateEvent"], ["刪除", "deleteEvent"]]); // 加 3 個 button`
-  - - button 數量有變，記得要去 html `tab` 的 table 新增 `<td>` 的 event
+  - button 數量有變，記得要去 html `tab` 的 table 新增 `<td>` 的 event
    
--  data 放入 table
+- data 放入 table  
   - `putInTable(data, table_id)`
   - 如果有部分不顯示，在這邊設 if
     ```
