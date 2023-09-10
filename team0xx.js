@@ -6,7 +6,7 @@ let nextDate = moment().add(1, "days").format('YYYY-MM-DD');
 // all sort
 let sort_total = [];
 
-// all note, [title, content]
+// all note, [[index, title, content]]
 let note_total = [];
 
 // initial table
@@ -45,7 +45,7 @@ function getData() {
 // 幫每一筆 data 最後加入哪些 button
 function addBtInData(origin_data, types) {
     let data = structuredClone(origin_data); // deep clone the global data
-    // 每一筆 data, 從第二筆開始, 第一筆 = index
+    // 每一筆 data
     for (let i = 0;i < data.length;i++) {
         // 每一種 button
         for (let j = 0;j < types.length;j++) {
@@ -150,6 +150,7 @@ function putInTable(data, table_id) {
         table.innerHTML += "<tr>";
         // loop to get td content
         td_content = "";
+        // 從第二筆開始, 第一筆 = index
         for (let j = 1;j < td_num+1;j++) {
             td_content += 
             "<td>" + data[i][j] +
