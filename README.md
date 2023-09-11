@@ -1,6 +1,14 @@
 # OnlineNotebook
 online netbook system with javascript
 
+## function
+- 新增、刪除、更新 筆記
+  - 筆記內容 : title, content
+- 新增 tag
+  - tag 會顯示在新增筆記的部分
+- 查詢筆記
+  - 現在是用 title 查，會列出多個
+
 ## Global Variables
 - 如果 html 有要新增區塊元素要改的，同時只能顯示一個區塊
   - html
@@ -14,7 +22,7 @@ online netbook system with javascript
   - `let note_total = [];`
     -  格式 :  `[[index, title, content]]`
 
-## function
+## function in code
 
 - note 資料加入 button
   - `addBtInData(note_total, [["閱覽", "insertEvent"], ["修改", "updateEvent"], ["刪除", "deleteEvent"]]); // 加 3 個 button`
