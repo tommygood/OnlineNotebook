@@ -1,5 +1,6 @@
 # OnlineNotebook
-online netbook system with javascript
+online notebook system with javascript
+this project is used for preparing the ITSA Geek contest.
 
 ## function
 - 新增、刪除、更新 筆記
